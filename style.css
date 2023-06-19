@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+:root {
+    --primary: #45318C;
+    --primary-light: #8F78DD;
+    --secondary: #D83F87;
+    --light: #CCBFFE;
+    --primary-light-cast: #644FAF;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--light);
+    width: 100vw;
+    height: 100vh;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    gap: 1.5rem;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+        "header header header header header header"
+        "categories categories content content content chat"
+        "categories categories content content content chat"
+        "categories categories content content content chat"
+        "favourites favourites content content content chat"
+        "favourites favourites content content content chat"
+        "favourites favourites content content content chat"
+        "favourites favourites content content content chat";
+
+}
+
+/* Header */
+
+/* Brand */
+.header {
+    background: var(--primary);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+/* Header ends */
+
+/* categories */
+.categories {
+    grid-area: categories;
+    background: var(--primary);
+}
+
+/* categories Ends */
+
+/* favourites */
+.favourites {
+    grid-area: favourites;
+    background: var(--primary);
+}
+
+/* favourites Ends */
+
+/* content */
+.content {
+    grid-area: content;
+}
+
+/* content Ends */
+/* chat */
+.chat {
+    grid-area: chat;
+    background: var(--primary);
+}
+
+/* chat Ends */
