@@ -1,0 +1,8 @@
+/* categories */
+.categories {
+    grid-area: categories;
+    background: var(--primary);
+    margin-left: var(--base);
+}
+
+/* categories Ends */

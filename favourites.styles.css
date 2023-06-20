@@ -1,0 +1,8 @@
+/* favourites */
+.favourites {
+    grid-area: favourites;
+    background: var(--primary);
+    margin-left: var(--base);
+}
+
+/* favourites Ends */

@@ -1,0 +1,7 @@
+/* chat */
+.chat {
+    grid-area: chat;
+    background: var(--primary);
+}
+
+/* chat Ends */
