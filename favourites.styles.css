@@ -2,7 +2,6 @@
 .favourites {
     grid-area: favourites;
     background: var(--primary);
-    margin-left: var(--base);
 }
 
 .fav-items {
