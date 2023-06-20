@@ -61,3 +61,11 @@ body {
         "favourites content content content content chat";
 
 }
+
+.categories,
+.favourites,
+.chat {
+    margin-left: var(--base);
+    border-radius: var(--lg);
+    padding: var(--base);
+}
