@@ -50,8 +50,6 @@ body {
     flex-direction: column; */
     display: grid;
     gap: 1.5rem;
-    grid-template-rows: repeat(8,
-            1fr);
     grid-template-columns: 20vw repeat(4, 1fr) 20vw;
     grid-template-areas:
         "header header header header header header"
