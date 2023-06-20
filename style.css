@@ -76,3 +76,14 @@ body {
 .subtle {
     color: var(--light);
 }
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .title {
+    font-size: var(--lg);
+    font-weight: 500;
+}
