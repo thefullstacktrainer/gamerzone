@@ -26,6 +26,7 @@
     --xs: 0.5rem;
     --sm: 0.75rem;
     --base: 1rem;
+    --md: 1.05rem;
     --lg: 1.25rem;
     --xl: 1.5rem;
     --2xl: 2rem;
@@ -49,7 +50,9 @@ body {
     flex-direction: column; */
     display: grid;
     gap: 1.5rem;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(8,
+            1fr);
+    grid-template-columns: 20vw repeat(4, 1fr) 20vw;
     grid-template-areas:
         "header header header header header header"
         "categories content content content content chat"
@@ -67,5 +70,9 @@ body {
 .chat {
     margin-left: var(--base);
     border-radius: var(--lg);
-    padding: var(--base);
+    padding: var(--lg);
+}
+
+.subtle {
+    color: var(--light);
 }
