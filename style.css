@@ -43,13 +43,13 @@ body {
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas:
         "header header header header header header"
-        "categories categories content content content chat"
-        "categories categories content content content chat"
-        "categories categories content content content chat"
-        "favourites favourites content content content chat"
-        "favourites favourites content content content chat"
-        "favourites favourites content content content chat"
-        "favourites favourites content content content chat";
+        "categories content content content content chat"
+        "categories content content content content chat"
+        "categories content content content content chat"
+        "favourites content content content content chat"
+        "favourites content content content content chat"
+        "favourites content content content content chat"
+        "favourites content content content content chat";
 
 }
 
