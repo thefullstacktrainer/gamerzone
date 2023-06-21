@@ -1,6 +1,161 @@
 /* content */
 .content {
     grid-area: content;
+    display: flex;
+    flex-direction: column;
+    gap: var(--md);
+
+}
+
+.content .title {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.ad-slider {
+    display: flex;
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.ad-slider .slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 15px;
+    padding: var(--md);
+}
+
+.ad-slider .slide img {
+    width: 200%;
+    height: 165%;
+    object-fit: contain;
+    position: absolute;
+    top: 0%;
+    left: -50%;
+}
+
+.ad-slider .slide::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+
+}
+
+.slide__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm);
+    z-index: 10;
+    padding: var(--lg) 0;
+    height: 100%;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.slide__btn {
+    width: fit-content;
+    padding: var(--sm) var(--md);
+    background: var(--primary);
+    border-radius: var(--md);
+    border: none;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.slide__btn:hover {
+    background: var(--primary-light-cast);
+}
+
+.slide__slider {
+    display: flex;
+    gap: 5px;
+}
+
+.slide__slider .slider {
+    width: var(--sm);
+    height: 5px;
+    border-radius: 15px;
+    background: var(--secondary-lighter);
+}
+
+.slide__slider .slider--primary {
+    background: var(--primary-light);
+}
+
+.slide__slider .slider.active {
+    background: var(--secondary);
+    width: var(--xl);
+}
+
+.slide__slider .slider--primary.active {
+    background: var(--primary);
+}
+
+.popular-games {
+    display: flex;
+    flex-direction: column;
+    gap: var(--md);
+}
+
+.popular-games__head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.popular-games__body {
+    display: flex;
+    gap: var(--md);
+    justify-content: space-between;
+}
+
+.popular-games__card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm);
+}
+
+.popular-games__card__img {
+    width: 100%;
+    height: 15vh;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.popular-games__card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular-games__card__info {
+    display: flex;
+    gap: var(--xs);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.smaller {
+    font-size: var(--sm);
+}
+
+.card__btn {
+    padding: 5px var(--xs);
+    background: var(--primary);
+    border-radius: 8px;
 }
 
 /* content Ends */

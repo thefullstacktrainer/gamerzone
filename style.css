@@ -21,11 +21,13 @@
     --primary-light: #8F78DD;
     --secondary: #D83F87;
     --secondary-light: #ea60a0;
+    --secondary-lighter: #ef89b9;
     --light: #CCBFFE;
     --primary-light-cast: #644FAF;
     --green: #6bc770;
     --gradient-one: #B66CD1;
     --gradient-two: #A287FA;
+    --gray: #A3A6A7;
     --2xs: 0.35rem;
     --xs: 0.5rem;
     --sm: 0.75rem;
@@ -83,6 +85,10 @@ body {
     color: var(--light);
 }
 
+.subtle-gray {
+    color: var(--gray);
+}
+
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -96,4 +102,8 @@ body {
 .top-bar .title {
     font-size: var(--base);
     font-weight: 500;
+}
+
+.highlight {
+    color: var(--secondary);
 }
