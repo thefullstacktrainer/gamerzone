@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--md);
+    height: 100%;
 
 }
 
@@ -14,7 +15,7 @@
 
 .ad-slider {
     display: flex;
-    height: 40%;
+    min-height: 40%;
     width: 100%;
     overflow: hidden;
     border-radius: 15px;
@@ -107,6 +108,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--md);
+    min-height: 25%;
 }
 
 .popular-games__head {
@@ -156,6 +158,119 @@
     padding: 5px var(--xs);
     background: var(--primary);
     border-radius: 8px;
+}
+
+.library-accessory__container {
+    display: flex;
+    gap: var(--md);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 32%;
+}
+
+.library,
+.accessories {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    background: var(--primary);
+    border-top-left-radius: var(--lg);
+    border-top-right-radius: var(--lg);
+    padding: var(--md);
+    gap: var(--md);
+}
+
+.accessories {
+    width: 30%;
+    gap: var(--lg);
+}
+
+.library-accessory__head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: var(--md);
+}
+
+.library-accessory__head h4,
+span {
+    font-weight: 500;
+    color: white;
+}
+
+.library__card {
+    display: flex;
+    gap: var(--md);
+}
+
+.library__card__img {
+    width: var(--4xl);
+    height: var(--4xl);
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.library__card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.library__card__info {
+    display: flex;
+    gap: var(--xs);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card__btn--secondary {
+    background: var(--secondary);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--xs) var(--md);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+
+.card__btn--secondary:hover {
+    background: var(--secondary-light);
+}
+
+.accessories__card {
+    background: var(--primary-light-cast);
+    border-radius: 15px;
+    position: relative;
+}
+
+.accessories__card--title {
+    padding: var(--lg);
+    font-weight: 500;
+}
+
+.accessories__card__btn {
+    background: var(--light);
+    border: none;
+    padding: var(--sm);
+    border-top-left-radius: var(--base);
+    border-bottom-right-radius: var(--base);
+    width: fit-content;
+    float: right;
+    cursor: pointer;
+}
+
+.accessories__card__img {
+    position: absolute;
+    width: calc(1.65 * var(--4xl));
+    left: -6%;
+    bottom: -16%;
+    transform: rotate(-20deg);
 }
 
 /* content Ends */
