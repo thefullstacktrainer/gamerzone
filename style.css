@@ -20,8 +20,12 @@
     --primary: #45318C;
     --primary-light: #8F78DD;
     --secondary: #D83F87;
+    --secondary-light: #ea60a0;
     --light: #CCBFFE;
     --primary-light-cast: #644FAF;
+    --green: #6bc770;
+    --gradient-one: #B66CD1;
+    --gradient-two: #A287FA;
     --2xs: 0.35rem;
     --xs: 0.5rem;
     --sm: 0.75rem;
@@ -68,6 +72,10 @@ body {
 .chat {
     margin-left: var(--base);
     border-radius: var(--lg);
+}
+
+.categories,
+.favourites {
     padding: var(--lg);
 }
 
@@ -81,7 +89,11 @@ body {
     align-items: center;
 }
 
+.chat .top-bar {
+    padding: var(--lg);
+}
+
 .top-bar .title {
-    font-size: var(--lg);
+    font-size: var(--base);
     font-weight: 500;
 }
